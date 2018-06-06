@@ -1,0 +1,30 @@
+body{
+	color:black;
+}
+
+header{
+	display:flex;
+	justify-content:center;
+	flex-wrap:  wrap;
+}
+h1{
+	/* flex-grow: 1; */
+	justify-content:center;
+	font-size:2em;
+	width: 100%;
+}
+
+nav ul{
+	display:flex;
+	justify-content:center;
+	border-top:2px solid grey;
+	border-bottom:2px solid grey;
+
+}
+nav ul li a{
+	text-decoration: none;
+	color: grey;
+}
+nav ul li a:visited{
+	color: grey;
+}

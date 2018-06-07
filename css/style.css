@@ -3,7 +3,7 @@ body{
 }
 
 header{
-	display:flex;
+	/*! display:flex; */
 	justify-content:center;
 	flex-wrap:  wrap;
 }
@@ -74,16 +74,42 @@ aside h3{
 
 
 @media screen and (min-width: 1280px) {
+	body {
+		display: flex;
+	}
 	header, aside{
 		vertical-align: top;
-		width: 18%;
-		display: inline-block;
+		/* width: 18%;
+		display: inline-block; */
 		padding: 2%;
+		flex-grow: 1;
+	}
+	header h1 , header nav {
+
 	}
 
 	main{
-		width: 50%;
-		display: inline-block;
+		/* width: 50%;
+		display: inline-block; */
+		flex-grow: 1;
+		/* flex-wrap: wrap; */
+
+	}
+	article {
+			/* flex-grow: 1; */
+
+		}
+	article h2 {
+		flex-grow: 1;
+
+	}
+	article h3 {
+		flex-grow: 3;
+		background-color: red;
 	}
 
+	article p {
+		flex-grow: 4;
+		background-color: black;
+	}
 }
